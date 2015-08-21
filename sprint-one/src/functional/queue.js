@@ -1,29 +1,29 @@
 var Queue = function(){
   var someInstance = {};
-  var back = 0; // back always points to the position after last person in the Q
-  var front = 0; // front points to the first position in the Q
+  var _back = 0; // _back always points to the position after last person in the Q
+  var _front = 0; // _front points to the first position in the Q
 
   // Use an object with numeric keys to store values
-  var storage = {};
+  var _storage = {};
 
   // Implement the methods below
 
   someInstance.enqueue = function(value){
-    storage[back] = value;
-    back++;
+    _storage[_back] = value;
+    _back++;
   };
 
   someInstance.dequeue = function(){
-    if(back > front) {
-      var value = storage[front];
-      delete storage[front];
-      front++;
+    if(_back > _front) {
+      var value = _storage[_front];
+      delete _storage[_front];
+      _front++;
       return value;
     }
   };
 
   someInstance.size = function(){
-    return back - front;
+    return _back - _front;
   };
 
   return someInstance;
