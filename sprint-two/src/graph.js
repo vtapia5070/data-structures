@@ -4,7 +4,10 @@
 
 // Instantiate a new graph
 var Graph = function(){
+  //this = Object.create(Graph.prototype);
+  //return this;
 };
+
 
 // ------------------------
 // Add a node to the graph, passing in the node's value.
