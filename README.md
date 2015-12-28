@@ -1,6 +1,6 @@
 #data-structures
 A implementation of the following concepts:
-  - __data structures:__
+  - __Data Structures:__
     - _Tree_
     - _Binary Search Tree_
     - _Graph_
